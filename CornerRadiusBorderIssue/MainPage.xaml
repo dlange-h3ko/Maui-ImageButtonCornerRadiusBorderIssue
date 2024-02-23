@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CornerRadiusBorderIssue.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="ImageButton with corner 12 and border 8"/>
+            <ImageButton
+                Source="dotnet_bot.png"
+                BorderWidth="8"
+                BorderColor="Blue"
+                CornerRadius="12"
+                BackgroundColor="Red"
+                HorizontalOptions="Center"
+                HeightRequest="150"
+                WidthRequest="400"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="ImageButton with corner 12 and border 12"/>
+            <ImageButton
+                Source="dotnet_bot.png"
+                BorderWidth="12"
+                BorderColor="Green"
+                CornerRadius="12"
+                BackgroundColor="Yellow"
+                HorizontalOptions="Center"
+                HeightRequest="150"
+                WidthRequest="400"
+                Aspect="AspectFit" />
+            <Label
+                Text="Normal button with corner 12 and border 8"/>
+            <Button
+                Text="Testbutton"
+                BorderWidth="8"
+                BorderColor="Green"
+                CornerRadius="12"
+                BackgroundColor="Yellow"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                WidthRequest="400"
+                HeightRequest="150" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
